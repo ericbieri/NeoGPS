@@ -129,6 +129,8 @@
 //             *DELETE* the rest of this file and declare your own GPS port variable,
 //             GPS port name string, and debug print port variable (see above).
 
+#define NEOGPS_USE_SERIAL1
+
 #if defined(SERIAL_PORT_HARDWARE_OPEN)
 
   #if SERIAL_PORT_HARDWARE_OPEN == Serial1
