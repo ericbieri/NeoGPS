@@ -39,7 +39,6 @@ public:
     Location_t( double lat, double lon )
       : _lat(lat / LOC_SCALE), _lon(lon / LOC_SCALE)
         {}
-
     int32_t  lat() const      { return _lat; };
     void     lat( int32_t l ) { _lat = l; };
     float    latF() const     { return ((float) lat()) * LOC_SCALE; };

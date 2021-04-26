@@ -45,7 +45,7 @@
 // to determine when the GPS quiet time begins, and thus
 // when you can perform "some" time-consuming operations.
 
-#define LAST_SENTENCE_IN_INTERVAL NMEAGPS::NMEA_RMC
+#define LAST_SENTENCE_IN_INTERVAL NMEAGPS::NMEA_ZDA
 
 // NOTE: For PUBX-only, PGRM and UBX configs, use
 //          (NMEAGPS::nmea_msg_t)(NMEAGPS::NMEA_LAST_MSG+1)
@@ -145,7 +145,7 @@
 //   to attachInterrupt, this must be defined.
 // Otherwise, it must be commented out.
 
-//#define NMEAGPS_INTERRUPT_PROCESSING
+// #define NMEAGPS_INTERRUPT_PROCESSING
 
 #ifdef  NMEAGPS_INTERRUPT_PROCESSING
   #define NMEAGPS_PROCESSING_STYLE NMEAGPS::PS_INTERRUPT
